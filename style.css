@@ -1,0 +1,124 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 100px;
+  box-sizing: border-box;
+  background-color: #292B73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panels {
+  display: flex;
+  width: 100%;
+}
+.panels .panel {
+  flex: 5;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  background-color: #fff;
+  color: #292B73;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.panels .panel.yellow {
+  background-color: #FFB637;
+}
+.panels h1, .panels h3 {
+  margin: 0;
+  text-align: center;
+}
+.panels h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.panels h1 {
+  font-weight: 400;
+}
+.panels textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.panels textarea:focus {
+  border-color: #292B73;
+}
+.panels .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.panels button {
+  padding: 10px 20px;
+  border-radius: 0px;
+  margin: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  border: none;
+}
+.panels button.yellow {
+  background-color: #FFB637;
+}
+.panels button.purple {
+  background-color: #292B73;
+  color: white;
+}
+.panels button.white {
+  background-color: #fff;
+  border: 2px solid #292B73;
+}
+.panels .sysbol {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+.panels hr {
+  border: none;
+  border-bottom: 3px solid #292B73;
+}
+.panels .translist {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  flex-wrap: wrap;
+}
+.panels .translist li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 30%;
+}
+
+.decoration {
+  font-size: 500px;
+  color: white;
+  position: absolute;
+  font-weight: 900;
+  left: -50px;
+  top: -50px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.playlist {
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+}
+.playlist .playing {
+  color: #FFB637;
+}
